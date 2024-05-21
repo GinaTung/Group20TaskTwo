@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,5 +51,140 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.header .logo {
+  position: absolute;
+  left: 0;
+}
+
+.header .header-nav-list .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding: 32px 0;
+}
+
+@media (max-width: 768px) {
+  .header .header-nav-list .header-nav {
+    display: none;
+    position: absolute;
+    padding: 0;
+    top: 50px;
+    left: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 99;
+    text-align: center;
+  }
+}
+
+.header .header-nav-list .header-nav li {
+  position: relative;
+}
+
+.header .header-nav-list .header-nav li a {
+  padding: 4px 6px;
+  display: block;
+}
+
+.header .header-nav-list .header-nav li a:hover:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.header .header-nav-list .header-nav li a:hover:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.header-d-none {
+  display: none;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.header-nav-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-nav-btn {
+    display: block;
+  }
+}
+
+.close {
+  display: none;
 }
 /*# sourceMappingURL=all.css.map */

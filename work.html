@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>作品集</title>
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.css" />
   </head>
   <body>
-    <header>
+    <header class="header container">
       <h1 class="logo">
-        <a href="#"><img src="./header/img/logo.svg" alt="menu" /></a>
+        <a href="#"><img src="./header/img/logo.svg" alt="Logo" /></a>
       </h1>
-      <nav>
-        <ul>
-          <li><a href="#">首頁</a></li>
+      <div class="header-nav-btn">
+        <button type="button" aria-label="Open menu" class="header-btn open">
+          <img src="./header/img/menu.png" alt="menu" />
+        </button>
+        <button type="button" aria-label="Close menu" class="header-d-none header-btn close">
+          <img src="./header/img/close.png" alt="menu" />
+        </button>
+      </div>
+      <nav aria-label="Main navigation" class="header-nav-list">
+        <ul class="header-nav">
+          <li><a href="#" class="">首頁</a></li>
           <li><a href="#">作品集</a></li>
           <li><a href="#">服務項目</a></li>
           <li><a href="#">部落格</a></li>
@@ -21,6 +29,9 @@
         </ul>
       </nav>
     </header>
-    <h1>作品集</h1>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./header/all.js"></script>
   </body>
 </html>
