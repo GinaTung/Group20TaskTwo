@@ -106,14 +106,6 @@ p {
   color: #1E1E1E;
   padding: 59px 71px;
   margin-bottom: 24px;
-  /*.benner-mark {
-  	width: 100%;
-  	position: absolute;
-  	bottom: 0;
-  	left: 50%;
-  	transform: translateX(-50%);
-  	z-index: -1;
-  }*/
 }
 .benner-title span {
   width: 100%;
