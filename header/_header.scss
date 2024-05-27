@@ -1,17 +1,14 @@
-.container {
+.header-container{
   max-width: 1296px;
   margin: 0 auto;
   @media (max-width: 768px) {
     padding: 0 12px;
   }
 }
-img {
-  display: block;
-  object-fit: cover;
-}
+
 .header-border {
   border-bottom: 1px solid #f1f1f1;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   height: 96px;
@@ -30,6 +27,8 @@ img {
     justify-content: flex-end;
   }
   .logo {
+    display: block;
+    object-fit: cover;
     position: absolute;
     left: 0;
     @media (max-width: 768px) {
