@@ -44,7 +44,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -54,8 +54,7 @@ table {
 }
 
 *, *::after, *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -74,4 +73,85 @@ img {
   width: 100%;
   height: auto;
 }
-/*# sourceMappingURL=all.css.map */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.5rem 0;
+}
+
+.footer-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.left-zone {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.right-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn {
+  background-color: white;
+  border: solid 1px #C1C1C1;
+  border-radius: 8px;
+  color: #3B3B3B;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding: 8px 24px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: white;
+  color: #3B3B3B;
+}
+
+span {
+  color: #919191;
+}
+
+.logo {
+  width: 7.5rem;
+}
+
+.footer-icon {
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-bg {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+  }
+  .left-zone {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .right-zone {
+    width: 80%;
+  }
+  .footer-icon {
+    width: 12%;
+  }
+}/*# sourceMappingURL=all.css.map */
