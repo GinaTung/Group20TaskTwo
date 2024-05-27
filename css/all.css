@@ -73,9 +73,6 @@ a {
 img {
   width: 100%;
   height: auto;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .container {
@@ -87,6 +84,12 @@ img {
   .container {
     padding: 0 12px;
   }
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-border {
