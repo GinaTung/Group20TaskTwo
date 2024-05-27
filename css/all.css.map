@@ -6,7 +6,11 @@
         "../header/_reset.scss",
         "../header/_base.scss",
         "../header/_mixin.scss",
-        "../header/_work.scss"
+        "../header/_work.scss",
+        "../footer/_reset.scss",
+        "../footer/_base.scss",
+        "../footer/_work.scss",
+        "../benner/_benner.scss"
     ],
     "names": [],
     "file": "all.css"
