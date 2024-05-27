@@ -94,9 +94,15 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  height: 57px;
+  height: 96px;
   background-color: white;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-border {
+    height: 57px;
+  }
 }
 
 .header {
@@ -247,10 +253,17 @@ img {
 }
 
 .header-btn {
+  display: none;
   background-color: transparent;
   border: 0;
   cursor: pointer;
   padding: 8px 0;
+}
+
+@media (max-width: 768px) {
+  .header-btn {
+    display: block;
+  }
 }
 
 .close {
