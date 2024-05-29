@@ -1,18 +1,5 @@
-// CDN
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-
-/* 全域 */
-*,* ::before, *::after {
-    box-sizing: border-box;
-}
-body {
-    font-family: "Noto Sans TC", sans-serif;
-}
 img {
     vertical-align: middle;
-}
-a{
-    text-decoration: none;
 }
 h4 {
 	font-size: 24px;
@@ -84,7 +71,7 @@ p {
 		padding-bottom: 4px;
 		margin-bottom: 10px;
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			display: block;
 			width: 24px;
