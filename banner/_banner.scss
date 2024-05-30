@@ -32,21 +32,42 @@ p {
 		color: #1E1E1E;
 		padding: 59px 71px;
 		margin-bottom: 24px;
-		span {
+		/*span { // 使用bg，img稱不開
 			width: 100%;
 			background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png);
 			background-repeat: no-repeat;
 			background-position: bottom 3px center;
 			background-size: 100%;
+		}*/
+		span {
+			position: relative;
+			z-index: 1;
+			&::after {
+				position: absolute;
+				content: '';
+				background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png);
+				background-repeat: no-repeat;
+				background-position: bottom 2px center;
+				background-size: contain;
+				width: 148px;
+				height: 8px;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+			}
 		}
 	}
 	.quote-L {
 		position: absolute;
+		width: 72px;
+		height: 72px;
 		top: 0;
 		left: 0;
 	}
 	.quote-R {
 		position: absolute;
+		width: 72px;
+		height: 72px;
 		bottom: 0;
 		right: 0;
 	}
@@ -109,6 +130,8 @@ p {
 		}
 		.quote-m-L {
 			display: block;
+			width: 64px;
+			height: 64px;
 		}
 		&-items {
 			flex-direction: column;
